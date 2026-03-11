@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Student {
     private int numarMatricol;
     private String prenume;
@@ -27,6 +29,20 @@ public class Student {
         return formatieDeStudiu;
     }
 
+    public boolean equals(Object o){
+        if (this == o) return true;
+        if(!(o instanceof Student)) return false;
+
+        Student student = (Student) o;
+
+        return prenume.equals(student.prenume) &&
+                nume.equals(student.nume) &&
+                formatieDeStudiu.equals(student.formatieDeStudiu);
+    }
+
+    public int hashCode(){
+        return Objects.hash(prenume, nume, formatieDeStudiu);
+    }
 
    public String toString(){
         return "Nr. Matricol: " +  numarMatricol + "\n" + "Nume: " + nume  + "\n" +"Prenume: " + prenume + "\n" +"Formatie de studiu: " + formatieDeStudiu;

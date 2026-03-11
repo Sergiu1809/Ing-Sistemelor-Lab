@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+
 
 public class main {
 
@@ -13,12 +15,16 @@ public class main {
         return false;
     }
 
+    public static boolean existaStudentv2(HashSet<Student> studenti, Student studentCautat){
+        return  studenti.contains(studentCautat);
+    }
 
     public static void main(String[] args) {
 
         Student s1 = new Student(128,"Sergiu","Tanase","ISM21/1");
         Student s2 = new Student(120, "Alis", "Popa", "TI21/2");
         Student s3 = new Student(112, "Maria", "Popa", "TI21/1");
+        Student s4 = new Student(167, "Ana", "Popa", "TI21/2");
         List<Student> studenti = new ArrayList<>();
         studenti.add(s1);
         studenti.add(s2);
@@ -30,6 +36,14 @@ public class main {
 
         System.out.println(existaStudent(studenti,s2));
         System.out.println(existaStudent(studenti,s3));
+
+        HashSet<Student> set = new HashSet<>(studenti);
+
+        System.out.println(existaStudentv2(set,s1));
+        System.out.println(existaStudentv2(set,s4));
+
+
+
 
     }
 }
