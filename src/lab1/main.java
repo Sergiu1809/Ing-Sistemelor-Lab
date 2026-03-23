@@ -1,3 +1,9 @@
+package lab1;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -19,7 +25,7 @@ public class main {
         return  studenti.contains(studentCautat);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Student s1 = new Student(128,"Sergiu","Tanase","ISM21/1");
         Student s2 = new Student(120, "Alis", "Popa", "TI21/2");
@@ -41,9 +47,7 @@ public class main {
 
         System.out.println(existaStudentv2(set,s1));
         System.out.println(existaStudentv2(set,s4));
-
-
-
-
     }
 }
+
+

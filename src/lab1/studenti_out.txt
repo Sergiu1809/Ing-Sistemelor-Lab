@@ -1,0 +1,6 @@
+Nr. Matricol: 1028, Nume: Ionescu, Prenume: Mihai, Formatie de studiu: TI132/2
+Nr. Matricol: 1024, Nume: Mihalcea, Prenume: Ioan, Formatie de studiu: ISM141/1
+Nr. Matricol: 1027, Nume: Mohanu, Prenume: Paul, Formatie de studiu: TI132/1
+Nr. Matricol: 1025, Nume: Popa, Prenume: Andrei, Formatie de studiu: ISM141/2
+Nr. Matricol: 1026, Nume: Popescu, Prenume: Bianca, Formatie de studiu: TI131/2
+Nr. Matricol: 1026, Nume: Prodan, Prenume: Anamaria, Formatie de studiu: TI131/1

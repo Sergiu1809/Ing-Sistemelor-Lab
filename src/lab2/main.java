@@ -1,13 +1,14 @@
-import java.util.*;
+package lab2;
 
-public class Lab2 {
+import java.util.*;
+public class main {
     public static void main(String[] args) {
 
         List<Integer> x = new ArrayList();
         List<Integer> y = new ArrayList();
         List <Integer> xPlusY = new ArrayList(); //a
         Set<Integer> zSet = new TreeSet(); //b //TreeSet elimina duplicatele automat
-        List<Integer> xMinusY = new ArrayList();
+        List<Integer> xMinusY = new ArrayList(); //c
         int p = 4;
         List<Integer> xPlusYLimitedByP = new ArrayList(); //d
 

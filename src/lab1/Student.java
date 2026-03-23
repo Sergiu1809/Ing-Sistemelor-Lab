@@ -1,3 +1,5 @@
+package lab1;
+
 import java.util.Objects;
 
 public class Student {
@@ -45,7 +47,6 @@ public class Student {
     }
 
    public String toString(){
-        return "Nr. Matricol: " +  numarMatricol + "\n" + "Nume: " + nume  + "\n" +"Prenume: " + prenume + "\n" +"Formatie de studiu: " + formatieDeStudiu;
+        return "Nr. Matricol: " +  numarMatricol + ", Nume: " + nume  +", Prenume: " + prenume +", Formatie de studiu: " + formatieDeStudiu;
     }
 }
-
