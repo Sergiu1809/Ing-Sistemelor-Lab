@@ -7,12 +7,17 @@ public class Student {
     private String prenume;
     private String nume;
     private String formatieDeStudiu;
+    private float nota;
 
     public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
         this.numarMatricol = numarMatricol;
         this.prenume = prenume;
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
+    }
+
+    public void setNota(float nota) {
+        this.nota = nota;
     }
 
     public int getNumarMatricol() {
@@ -47,6 +52,6 @@ public class Student {
     }
 
    public String toString(){
-        return "Nr. Matricol: " +  numarMatricol + ", Nume: " + nume  +", Prenume: " + prenume +", Formatie de studiu: " + formatieDeStudiu;
+        return "Nr. Matricol: " +  numarMatricol + ", Nume: " + nume  +", Prenume: " + prenume +", Formatie de studiu: " + formatieDeStudiu + ", Nota: " + nota;
     }
 }
