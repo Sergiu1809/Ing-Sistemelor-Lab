@@ -20,6 +20,10 @@ public class Student {
         this.nota = nota;
     }
 
+    public float getNota() {
+        return nota;
+    }
+
     public int getNumarMatricol() {
         return numarMatricol;
     }

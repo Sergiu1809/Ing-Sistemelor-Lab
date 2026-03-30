@@ -9,6 +9,21 @@ import java.util.List;
 import java.util.Map;
 
 public class AppLab4 {
+
+    public static float gasesteNota(String prenume, String nume, HashMap<Integer, Student> studenti) {
+        HashMap<String, Student> byName = new HashMap<>();
+        for (Student s : studenti.values()) {
+            String key = s.getPrenume() + "-" + s.getNume();
+            byName.put(key, s);
+        }
+
+        String cautareKey = prenume + "-" + nume;
+        Student found = byName.get(cautareKey);
+
+        if (found == null) return 0.0f;
+        return found.getNota();
+    }
+
     public static void main(String[] args) throws IOException {
         HashMap<String, Integer> varste = new HashMap<>();
         varste.put("Ioan", 21);
@@ -84,5 +99,12 @@ public class AppLab4 {
         for (Student s : studenti.values()) {
             System.out.println(s);
         }
+
+
+        float notaM = gasesteNota("Bianca", "Popescu", studenti);
+        float notaN = gasesteNota("Ioan", "Popa", studenti);
+
+        System.out.println("Nota Bianca Popescu: " + notaM);
+        System.out.println("Nota Ioan Popa: " + notaN);
     }
 }
