@@ -1,0 +1,4 @@
+Nr. Matricol: 1025, Nume: Popa, Prenume: Andrei, Formatie de studiu: ISM141/2, Nota: 8.7, Bursa: 725.5
+Nr. Matricol: 1024, Nume: Mihalcea, Prenume: Ioan, Formatie de studiu: ISM141/1, Nota: 9.8, Bursa: 801.1
+Nr. Matricol: 1026, Nume: Prodan, Prenume: Anamaria, Formatie de studiu: TI131/1, Nota: 8.9, Bursa: 745.5
+Nr. Matricol: 1029, Nume: Popescu, Prenume: Bianca, Formatie de studiu: TI131/1, Nota: 9.1, Bursa: 780.8
