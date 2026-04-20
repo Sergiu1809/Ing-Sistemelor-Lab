@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class AppLab4 {
 
-    public static float gasesteNota(String prenume, String nume, HashMap<Integer, Student> studenti) {
+    public static double gasesteNota(String prenume, String nume, HashMap<Integer, Student> studenti) {
         HashMap<String, Student> byName = new HashMap<>();
         for (Student s : studenti.values()) {
             String key = s.getPrenume() + "-" + s.getNume();
@@ -101,8 +101,8 @@ public class AppLab4 {
         }
 
 
-        float notaM = gasesteNota("Bianca", "Popescu", studenti);
-        float notaN = gasesteNota("Ioan", "Popa", studenti);
+        double notaM = gasesteNota("Bianca", "Popescu", studenti);
+        double notaN = gasesteNota("Ioan", "Popa", studenti);
 
         System.out.println("Nota Bianca Popescu: " + notaM);
         System.out.println("Nota Ioan Popa: " + notaN);

@@ -5,10 +5,14 @@ import java.util.Objects;
 public class StudentBursier extends Student {
     private double cuantumBursa;
 
-    public StudentBursier(int numarMatricol, String prenume, String nume, String formatieDeStudiu, float nota, double cuantumBursa){
+    public StudentBursier(int numarMatricol, String prenume, String nume, String formatieDeStudiu, double nota, double cuantumBursa){
         super(numarMatricol, prenume, nume, formatieDeStudiu);
         this.setNota(nota);
         this.cuantumBursa = cuantumBursa;
+    }
+
+    public double getCuantumBursa() {
+        return cuantumBursa;
     }
 
     public boolean equals(Object o){

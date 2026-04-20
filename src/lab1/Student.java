@@ -7,7 +7,7 @@ public class Student {
     private String prenume;
     private String nume;
     private String formatieDeStudiu;
-    private float nota;
+    private double nota;
 
     public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
         this.numarMatricol = numarMatricol;
@@ -16,11 +16,11 @@ public class Student {
         this.formatieDeStudiu = formatieDeStudiu;
     }
 
-    public void setNota(float nota) {
+    public void setNota(double nota) {
         this.nota = nota;
     }
 
-    public float getNota() {
+    public double getNota() {
         return nota;
     }
 

@@ -1,5 +1,7 @@
 package lab5;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class IntCalculator {
     protected int state;
 
