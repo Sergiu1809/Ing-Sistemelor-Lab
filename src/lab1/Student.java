@@ -7,17 +7,19 @@ public class Student {
     private String prenume;
     private String nume;
     private String formatieDeStudiu;
-    private double nota;
+    private final double nota;
 
-    public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu) {
+    public Student(int numarMatricol, String prenume, String nume, String formatieDeStudiu, double nota) {
         this.numarMatricol = numarMatricol;
         this.prenume = prenume;
         this.nume = nume;
         this.formatieDeStudiu = formatieDeStudiu;
+        this.nota = nota;
     }
 
-    public void setNota(double nota) {
-        this.nota = nota;
+    public Student(int numarMatricol, String prenume, String nume,
+                   String formatieDeStudiu) {
+        this(numarMatricol, prenume, nume, formatieDeStudiu, 0.0);
     }
 
     public double getNota() {

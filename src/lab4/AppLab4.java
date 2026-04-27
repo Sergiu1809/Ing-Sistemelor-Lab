@@ -91,7 +91,14 @@ public class AppLab4 {
 
             Student s = studenti.get(numarMatricol);
             if (s != null) {
-                s.setNota(nota);
+                Student updated = new Student(
+                        s.getNumarMatricol(),
+                        s.getPrenume(),
+                        s.getNume(),
+                        s.getFormatieDeStudiu(),
+                        nota
+                );
+                studenti.put(numarMatricol, updated);
             }
         }
 
