@@ -23,5 +23,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="apache.poi" level="project" />
+    <orderEntry type="library" exported="" name="apache.poi.ooxml" level="project" />
   </component>
 </module>
